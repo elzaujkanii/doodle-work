@@ -53,7 +53,15 @@ class CreateAPoll {
     }
 
     dateButton(){
-        cy.get('.OptionNavigatorButton__forward').click();
+        cy.get('.calendar').click();
+    }
+
+    submitButton(){
+        cy.get('.ActionBar__submit-button').click()
+    }
+
+    chooseSectionDate(){
+        cy.get('.rbc-day-slot:nth-child(8) > .rbc-timeslot-group').click({multiple: true, force: true});
     }
 }
 

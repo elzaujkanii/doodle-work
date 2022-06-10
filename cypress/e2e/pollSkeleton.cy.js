@@ -10,6 +10,10 @@ const title = new CreateAPoll();
 const desc = new CreateAPoll();
 const country = new CreateAPoll();
 const selectedCountry = new CreateAPoll();
+const date = new CreateAPoll();
+const submitForm = new CreateAPoll();
+const timeSlot = new CreateAPoll();
+const submitButton = new CreateAPoll();
 
 describe("Create New Poll", function () {
     it("Go to homepage and close cookies", function () {
@@ -43,6 +47,18 @@ describe("Create New Poll", function () {
 
     it("Select this country", function(){
         selectedCountry.selectCountry();
+    });
+
+    it("Click the date", function(){
+        date.dateButton();
+    });
+
+    it("Choose a time slot", function(){
+        timeSlot.chooseSectionDate();
+    });
+
+    it("Submit the Form", function(){
+        submitButton.submitButton();
     });
 }); 
 
